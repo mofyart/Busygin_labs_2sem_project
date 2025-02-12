@@ -1,0 +1,6 @@
+/home/adduser/Github/Busygin_labs_2sem_project/project1/build/CMakeFiles/lab1.dir
+/home/adduser/Github/Busygin_labs_2sem_project/project1/build/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/project1/build/CMakeFiles/rebuild_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/project1/build/CalculateSquare/CMakeFiles/CalculateSquare.dir
+/home/adduser/Github/Busygin_labs_2sem_project/project1/build/CalculateSquare/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/project1/build/CalculateSquare/CMakeFiles/rebuild_cache.dir

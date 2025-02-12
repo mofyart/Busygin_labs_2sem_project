@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/adduser/Github/Busygin_labs_2sem_project/project2"
+}

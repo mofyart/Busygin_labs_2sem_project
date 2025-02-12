@@ -1,0 +1,2 @@
+/usr/bin/ar qc libCalculateSquare.a CMakeFiles/CalculateSquare.dir/CalculateSquare.cpp.o
+/usr/bin/ranlib libCalculateSquare.a

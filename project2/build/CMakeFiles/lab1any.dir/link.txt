@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/lab1any.dir/main.cpp.o -o lab1any  /home/adduser/Github/Busygin_labs_2sem_project/project2/libCalculateSquare.a 
