@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/Application.dir/main.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/main.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/main.cpp",
+  "output": "CMakeFiles/Application.dir/main.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/Application.dir/Application.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/Application.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/Application.cpp",
+  "output": "CMakeFiles/Application.dir/Application.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/PlanetClass",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PlanetClass.dir/PlanetClass.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/PlanetClass/PlanetClass.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/PlanetClass/PlanetClass.cpp",
+  "output": "PlanetClass/CMakeFiles/PlanetClass.dir/PlanetClass.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/DataBase",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/DataBase.dir/DataBase.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/DataBase/DataBase.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/DataBase/DataBase.cpp",
+  "output": "DataBase/CMakeFiles/DataBase.dir/DataBase.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/StringClass",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/StringClass.dir/String.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/StringClass/String.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/StringClass/String.cpp",
+  "output": "StringClass/CMakeFiles/StringClass.dir/String.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/CandidateClass",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/CandidateClass.dir/CandidateClass.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/CandidateClass/CandidateClass.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/CandidateClass/CandidateClass.cpp",
+  "output": "CandidateClass/CMakeFiles/CandidateClass.dir/CandidateClass.cpp.o"
+}
+]

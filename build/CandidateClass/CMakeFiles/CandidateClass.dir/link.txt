@@ -1,0 +1,2 @@
+/usr/bin/ar qc libCandidateClass.a CMakeFiles/CandidateClass.dir/CandidateClass.cpp.o
+/usr/bin/ranlib libCandidateClass.a

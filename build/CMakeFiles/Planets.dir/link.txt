@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/Planets.dir/main.cpp.o CMakeFiles/Planets.dir/Application.cpp.o -o Planets  PlanetClass/libPlanetClass.a DataBase/libDataBase.a StringClass/libStringClass.a CandidateClass/libCandidateClass.a 

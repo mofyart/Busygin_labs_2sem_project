@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPlanetClass.a CMakeFiles/PlanetClass.dir/PlanetClass.cpp.o
+/usr/bin/ranlib libPlanetClass.a

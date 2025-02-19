@@ -1,0 +1,219 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						5
+					]
+				},
+				{
+					"build" : "PlanetClass",
+					"jsonFile" : "directory-PlanetClass-Debug-8a05b22f53909210eabe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "PlanetClass",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "DataBase",
+					"jsonFile" : "directory-DataBase-Debug-4b10344b3952984d1028.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "DataBase",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "StringClass",
+					"jsonFile" : "directory-StringClass-Debug-b22e539fb459d42bb108.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "StringClass",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "CandidateClass",
+					"jsonFile" : "directory-CandidateClass-Debug-231d5bec2f0c31b14e1c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "CandidateClass",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Application",
+					"targetIndexes" : 
+					[
+						0,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "PlanetClass",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "DataBase",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "StringClass",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "CandidateClass",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Application::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Application-Debug-031debb88b3130c445f4.json",
+					"name" : "Application",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "CandidateClass::@9f9b2f392e8bf20ca419",
+					"jsonFile" : "target-CandidateClass-Debug-ccec880baee5b2fb3a4c.json",
+					"name" : "CandidateClass",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "DataBase::@a476e4c40090e0fb63c3",
+					"jsonFile" : "target-DataBase-Debug-f7539cb5845fe145d007.json",
+					"name" : "DataBase",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "PlanetClass::@3eac003af166b297eca4",
+					"jsonFile" : "target-PlanetClass-Debug-151fa9994c0ee9ff99e1.json",
+					"name" : "PlanetClass",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "StringClass::@33e2581c951d8ba86b47",
+					"jsonFile" : "target-StringClass-Debug-394b45f8828441875046.json",
+					"name" : "StringClass",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "clang-format::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-clang-format-Debug-9826e8b73f6a01fcc17c.json",
+					"name" : "clang-format",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/adduser/Github/Busygin_labs_2sem_project/build",
+		"source" : "/home/adduser/Github/Busygin_labs_2sem_project"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,16 @@
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/Application.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/clang-format.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/rebuild_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/PlanetClass/CMakeFiles/PlanetClass.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/PlanetClass/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/PlanetClass/CMakeFiles/rebuild_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/DataBase/CMakeFiles/DataBase.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/DataBase/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/DataBase/CMakeFiles/rebuild_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/StringClass/CMakeFiles/StringClass.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/StringClass/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/StringClass/CMakeFiles/rebuild_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CandidateClass/CMakeFiles/CandidateClass.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CandidateClass/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CandidateClass/CMakeFiles/rebuild_cache.dir

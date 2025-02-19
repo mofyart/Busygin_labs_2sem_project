@@ -1,0 +1,3 @@
+Artem 19 0 200
+Andrey 18 0 120
+Egor 45 1 210
