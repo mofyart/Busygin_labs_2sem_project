@@ -1,0 +1,7 @@
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/Application.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/clang-format.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/rebuild_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/FractionClass/CMakeFiles/FractionClass.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/FractionClass/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/FractionClass/CMakeFiles/rebuild_cache.dir

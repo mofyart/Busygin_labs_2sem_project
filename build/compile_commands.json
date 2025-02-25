@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/Application.dir/main.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/main.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/main.cpp",
+  "output": "CMakeFiles/Application.dir/main.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/Application.dir/mathFractionApp.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/mathFractionApp.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/mathFractionApp.cpp",
+  "output": "CMakeFiles/Application.dir/mathFractionApp.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/FractionClass",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/FractionClass.dir/fractionClass.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/FractionClass/fractionClass.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/FractionClass/fractionClass.cpp",
+  "output": "FractionClass/CMakeFiles/FractionClass.dir/fractionClass.cpp.o"
+}
+]

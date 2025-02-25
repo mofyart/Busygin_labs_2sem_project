@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/Application.dir/main.cpp.o CMakeFiles/Application.dir/mathFractionApp.cpp.o -o Application  FractionClass/libFractionClass.a 
