@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/MultipliersApp.dir/main.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/main.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/main.cpp",
+  "output": "CMakeFiles/MultipliersApp.dir/main.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/MultipliersApp.dir/MultipliersApp.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/MultipliersApp.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/MultipliersApp.cpp",
+  "output": "CMakeFiles/MultipliersApp.dir/MultipliersApp.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/MyStack",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/MyStack.dir/MyStack.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/MyStack/MyStack.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/MyStack/MyStack.cpp",
+  "output": "MyStack/CMakeFiles/MyStack.dir/MyStack.cpp.o"
+}
+]

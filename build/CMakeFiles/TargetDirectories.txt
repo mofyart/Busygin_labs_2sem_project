@@ -1,0 +1,7 @@
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/MultipliersApp.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/clang-format.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/rebuild_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/MyStack/CMakeFiles/MyStack.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/MyStack/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/MyStack/CMakeFiles/rebuild_cache.dir
