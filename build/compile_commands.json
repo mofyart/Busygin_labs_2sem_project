@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/lab_5.dir/main.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/main.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/main.cpp",
+  "output": "CMakeFiles/lab_5.dir/main.cpp.o"
+}
+]
