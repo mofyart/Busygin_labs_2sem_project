@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/CompositePolynomial.dir/main.cpp.o CMakeFiles/CompositePolynomial.dir/CompositePolynomial.cpp.o -o CompositePolynomial  lib/liblib.a 

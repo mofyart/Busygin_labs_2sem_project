@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/MultipliersApp.dir/main.cpp.o CMakeFiles/MultipliersApp.dir/CompositePolynomial.cpp.o -o MultipliersApp  lib/liblib.a 
