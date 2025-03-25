@@ -1,0 +1,784 @@
+Сделай отчет по следующему коду.
+Отчет должен содержать описание используемых данных.
+Тебе нужно указать все глобальные и статические переменные,
+сигнатуры функций, объявление классов, структур и других конструкций языка C++.
+Приведи только объявления, присваяемые значения писать не нужно.
+После объявления обязательно приведи краткое описание.
+СТРОГО ЗАПРЕЩАЕТСЯ УКАЗЫВАТЬ В ОТЧЕТЕ: локальные переменные, объявление namespace.
+На этом отчет заканичивается, больше ничего писать не нужно
+
+Пример отчета:
+
+Объявления:
+template <typename T> class Database;
+> Шаблон класса Database для хранения и управления данными типа T.
+template <typename T> Database<T>::Database(const char* filename);
+> Конструктор класса Database, принимающий C-style строку filename.
+template <typename T> Database<T>::Database(String filename);
+> Конструктор класса Database, принимающий объект String filename.
+template <typename T> Database<T>::~Database();
+> Деструктор класса Database.
+template <typename T> void Database<T>::Read();
+> Метод класса Database для чтения данных из файла.
+template <typename T> void Database<T>::Write();
+> Метод класса Database для записи данных в файл.
+template <typename T> void Database<T>::Sort();
+> Метод класса Database для сортировки данных.
+template <typename T> void Database<T>::Add(const T& element);
+> Метод класса Database для добавления элемента типа T.
+template <typename T> void Database<T>::Replace(std::size_t index, const T& element);
+> Метод класса Database для замены элемента типа T по индексу.
+template <typename T> void Database<T>::Remove(std::size_t index);
+> Метод класса Database для удаления элемента по индексу.
+template <typename T> void Database<T>::Edit(std::size_t index, const T& element);
+> Метод класса Database для редактирования элемента типа T по индексу.
+template <typename T> void Database<T>::Print(bool withIndexes = false);
+> Метод класса Database для печати данных.
+String filename;
+> Приватная переменная filename класса Database для хранения имени файла.
+Vector<T> array;
+> Приватная переменная array класса Database для хранения массива элементов типа T.
+enum class UserActions : int { kExit = 0, kReadFromFile = 1, kWriteToFile = 2, kSort = 3, kAdd = 4, kRemove = 5, kEdit = 6, kPrint = 7, };
+> Перечисление UserActions для действий пользователя.
+int main(int, char**);
+> Главная функция программы, точка входа.
+
+Файловая структура текущей папки:
+.
+CompositePolynomial.cpp
+main.cpp
+prompt.txt
+CompositePolynomial.hpp
+test.cpp
+.clangd
+lib
+lib/Term.hpp
+lib/Term.cpp
+lib/Polynomial.hpp
+lib/Polynomial.cpp
+lib/CMakeLists.txt
+CMakeLists.txt
+
+Содержимое файлов в текущей папке:
+----- Содержимое файла: CompositePolynomial.cpp -----
+#include "CompositePolynomial.hpp"
+
+#include <iostream>
+#include <limits>
+
+#include "lib/Polynomial.hpp"
+
+namespace CompositePolynomial {
+void AppPolynomial() {
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    Polynomial polynomFirst;
+    std::cout << "В каком виде хотите хранить поленом?" << std::endl;
+    std::cout << "Вариант №1: по возрастанию степени" << std::endl;
+    std::cout << "Вариант №2: по убыванию степени" << std::endl;
+    std::cout << std::endl;
+    int variantModeStorage = {};
+    std::cin >> variantModeStorage;
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+    switch (static_cast<ModeStorage>(variantModeStorage)) {
+        case ModeStorage::ascending:
+            polynomFirst.setModeStorage(ModeStorage::ascending);
+            break;
+        case ModeStorage::descending:
+            polynomFirst.setModeStorage(ModeStorage::descending);
+            break;
+        default:
+            std::cout << "Такогог варианта нет" << std::endl;
+            break;
+    }
+
+    std::cout << "Введите поленом" << std::endl;
+    std::cin >> polynomFirst;
+
+    std::cout << std::endl;
+    std::cout << "Обработанный поленом: " << polynomFirst << std::endl;
+
+    Polynomial polynomSecond;
+    Polynomial polynomThird;
+    std::cout << std::endl;
+    std::cout << "Введите ещё один поленом" << std::endl;
+    std::cin >> polynomSecond;
+
+    polynomThird = polynomFirst + polynomSecond;
+
+    std::cout << "Обработанный поленом 2:" << polynomSecond << std::endl;
+    std::cout << "Обработанный поленом 3:" << polynomThird << std::endl;
+
+    Polynomial polynomFifth;
+
+    polynomFifth = polynomFirst * polynomThird;
+    std::cout << std::endl;
+    std::cout << "Обработанный поленом 1:" << polynomFirst << std::endl;
+    std::cout << "Обработанный поленом 3:" << polynomThird << std::endl;
+    std::cout << "Обработанный поленом 5:" << polynomFifth << std::endl;
+
+    Polynomial polynomSixth(polynomFifth);
+    std::cout << std::endl;
+    std::cout << "Обработанный поленом 6:" << polynomSixth << std::endl;
+
+    polynomSixth += polynomSecond;
+    std::cout << std::endl;
+    std::cout << "Обработанный поленом 6:" << polynomSixth << std::endl;
+    std::cout << "Обработанный поленом 2:" << polynomSecond << std::endl;
+
+    polynomSecond *= polynomFirst;
+    std::cout << std::endl;
+    std::cout << "Обработанный поленом 2:" << polynomSecond << std::endl;
+    std::cout << "Обработанный поленом 1:" << polynomFirst << std::endl;
+}
+
+void StartApp() {
+    char decisionContinue = 'y';
+
+    while (decisionContinue == 'y') {
+        AppPolynomial();
+
+        std::cout << "Хотите продолжить выполнение работы программы (y/n)" << std::endl;
+        std::cin >> decisionContinue;
+    }
+}
+}  // namespace CompositePolynomial
+
+----- Содержимое файла: main.cpp -----
+#include "CompositePolynomial.hpp"
+
+int main([[maybe_unused]] int argc, [[maybe_unused]] char** argv) {
+    CompositePolynomial::StartApp();
+    return 0;
+}
+
+----- Содержимое файла: prompt.txt -----
+
+----- Содержимое файла: CompositePolynomial.hpp -----
+#pragma once
+
+namespace CompositePolynomial {
+enum class ModeStorage {
+    ascending = 1,
+    descending = 2
+};
+
+void AppPolynomial();
+
+void StartApp();
+}  // namespace CompositePolynomial
+
+----- Содержимое файла: test.cpp -----
+#include <iostream>
+#include <cstring>
+class Circle {
+    private:
+        int xCenter;
+        int yCenter;
+        int radius;
+    public:
+        Circle() {
+            xCenter = 0;
+            yCenter = 0;
+            radius = 0;
+        }
+        Circle(int x, int y, int r) : xCenter(x), yCenter(y), radius(r) {}
+
+        Circle& operator --() {
+            --xCenter;
+            --yCenter;
+            --radius;
+            return *this;
+        }
+
+        friend std::ostream& operator<<(std::ostream& cout, Circle& other) {
+            std::cout << "r=" << other.radius << ", " << "(" << other.xCenter <<  ',' << other.yCenter << ")" << std::endl;
+            return cout;
+        }
+
+        friend std::istream& operator>>(std::istream& cin, Circle& other) {
+            std::cin >> other.xCenter >> other.yCenter >> other.radius;
+            return cin;
+        }
+
+        friend Circle operator*(Circle& other, double number) {
+            int newX = other.xCenter * number;
+            int newY = other.yCenter * number;
+            int newRadius = other.radius * number;
+
+            Circle newCircle(newX, newY, newRadius);
+
+            return newCircle;
+        }
+
+        friend bool operator==(Circle& circle1, Circle& circle2) {
+            if ((circle1.xCenter == circle2.xCenter) && (circle1.yCenter == circle2.yCenter) && (circle1.radius == circle2.radius)) {
+                return true;
+            }
+
+            return false;
+        }
+};
+
+int main([[maybe_unused]] int argc, [[maybe_unused]] char** argv) {
+    Circle c1(1,2,5);
+    --c1;
+
+    std::cout << c1;
+    std::cout << std::endl;
+
+    Circle c2;
+    std::cin >> c2;
+    std::cout << std::endl;
+    std::cout << c2;
+
+    Circle c3(1, 2 ,3);
+    std::cout << std::endl;
+
+    Circle c4 = c3 * 2.0;
+    std::cout << c4 << std::endl;;
+
+    Circle c5 = c4;
+
+    if (c5 == c4) {
+        std::cout << "Равны" << std::endl;
+    }
+    return 0;
+}
+
+----- Содержимое файла: .clangd -----
+CompileFlags:
+ Add: [-std=c++20]
+
+----- Содержимое файла: lib/Term.hpp -----
+#include <cstring>
+#include <iostream>
+#include <regex>
+
+class Term {
+ private:
+    friend class Polynomial;
+    int coefficient;
+    int power;
+
+ public:
+    Term(int coefficentValue = 0, int powerValue = 0) : coefficient(coefficentValue), power(powerValue) {}
+
+    int getCoefficient();
+
+    friend void operator>>(char* term, Term& other);
+
+    friend std::ostream& operator<<(std::ostream& cout, Term& other);
+
+    Term& operator+=(Term& other);
+
+    friend Term operator*(const Term& firstTerm, const Term& secondTerm);
+};
+
+inline int Term::getCoefficient() {
+    return coefficient;
+}
+
+inline void operator>>(char* term, Term& other) {
+    size_t sizeTerm = std::strlen(term);
+    if (std::strchr(term, 'x') == nullptr) {
+        other.coefficient = std::stoi(term);
+        return;
+    }
+
+    const char* constTerm = term;
+
+    std::match_results<const char*> result;
+    std::regex regular(R"(([-+]?\d*)x\^?([-]?\d*)?|([-+])?x\^([-]?\d*))");
+
+    while (std::regex_search(constTerm, constTerm + std::strlen(constTerm), result, regular)) {
+        std::sub_match<const char*> matchCoefficient = result[1];
+        size_t sizeCoefficient = matchCoefficient.length();
+
+        char* coefficient = new char[sizeCoefficient + 1]{};
+        std::memcpy(coefficient, matchCoefficient.first, sizeCoefficient);
+
+        std::sub_match<const char*> matchPower = result[2];
+        size_t sizePower = matchPower.length();
+
+        char* power = new char[sizePower + 1]{};
+        std::memcpy(power, matchPower.first, sizePower);
+
+        if (power[0] == '\0') {
+            if (coefficient[0] == '\0' || coefficient[1] == '\0') {
+                if (coefficient[0] == '-') {
+                    other.power = 1;
+                    other.coefficient = -1;
+                    return;
+                }
+
+                other.power = 1;
+                other.coefficient = 1;
+                return;
+            }
+
+            other.power = 1;
+            other.coefficient = std::stoi(coefficient);
+        } else if ((coefficient[0] == '\0') || (coefficient[0] == '+' && !std::isdigit(coefficient[1]))) {
+            other.power = std::stoi(power);
+            other.coefficient = 1;
+        } else if (coefficient[0] == '-' && !std::isdigit(coefficient[1])) {
+            other.power = std::stoi(power);
+            other.coefficient = -1;
+        } else {
+            other.power = std::stoi(power);
+            other.coefficient = std::stoi(coefficient);
+        }
+
+        delete[] coefficient;
+        delete[] power;
+
+        constTerm = result.suffix().first;
+    }
+}
+
+inline std::ostream& operator<<(std::ostream& cout, Term& other) {
+    if (other.power == 0) {
+        if (other.coefficient > 0) {
+            std::cout << '+' << other.coefficient;
+            return cout;
+        }
+
+        std::cout << other.coefficient;
+    } else if (other.coefficient == -1) {
+        if (other.power == 1) {
+            std::cout << "-x";
+            return cout;
+        }
+
+        std::cout << "-x^" << other.power;
+    } else if (other.coefficient == 1) {
+        if (other.power == 1) {
+            std::cout << "+x";
+            return cout;
+        }
+        std::cout << "+x^" << other.power;
+    } else {
+        if (other.coefficient > 0) {
+            if (other.power == 1) {
+                std::cout << '+' << other.coefficient << "x";
+                return cout;
+            }
+            std::cout << '+' << other.coefficient << "x^" << other.power;
+            return cout;
+        }
+
+        if (other.power == 1) {
+            std::cout << other.coefficient << "x";
+            return cout;
+        }
+
+        std::cout << other.coefficient << "x^" << other.power;
+    }
+
+    return cout;
+}
+
+inline Term& Term::operator+=(Term& other) {
+    coefficient += other.coefficient;
+    return *this;
+}
+
+inline Term operator*(const Term& firstTerm, const Term& secondTerm) {
+    Term newTerm;
+
+    newTerm.coefficient = firstTerm.coefficient * secondTerm.coefficient;
+    newTerm.power = firstTerm.power + secondTerm.power;
+
+    return newTerm;
+}
+
+----- Содержимое файла: lib/Term.cpp -----
+#include "Term.hpp"
+
+----- Содержимое файла: lib/Polynomial.hpp -----
+#include <algorithm>
+#include <cstring>
+#include <iostream>
+#include <regex>
+
+#include "../CompositePolynomial.hpp"
+#include "Term.hpp"
+
+class Polynomial {
+ private:
+    Term* dataBaseTerms;
+    int capacity;
+    int count;
+    CompositePolynomial::ModeStorage modeStorage = CompositePolynomial::ModeStorage::ascending;
+
+ public:
+    Polynomial();
+
+    Polynomial(Term object);
+
+    Polynomial(Polynomial& other);
+
+    ~Polynomial();
+
+    void AddElement(Term object);
+
+    void setModeStorage(CompositePolynomial::ModeStorage variantModeStorage);
+
+    void ReSize();
+
+    void SortDataBase();
+
+    void SimplificationPolynomial();
+
+    void DeleteZeroTerm();
+
+    Polynomial& operator=(const Polynomial& other);
+
+    Polynomial& operator+=(const Polynomial& other);
+
+    Polynomial& operator*=(const Polynomial& other);
+
+    friend Polynomial operator+(const Polynomial& firstpoly, const Polynomial& secondPoly);
+
+    friend Polynomial operator*(const Polynomial& firstpoly, const Polynomial& secondPoly);
+
+    friend std::istream& operator>>(std::istream& cin, Polynomial& other);
+
+    friend std::ostream& operator<<(std::ostream& cout, Polynomial& other);
+};
+
+inline Polynomial::Polynomial(Polynomial& other) {
+    Term* oldDataBase = dataBaseTerms;
+
+    Term* newDataBase = new Term[other.capacity];
+    std::copy(other.dataBaseTerms, other.dataBaseTerms + other.capacity, newDataBase);
+
+    count = other.count;
+    capacity = other.capacity;
+    dataBaseTerms = newDataBase;
+}
+
+inline Polynomial::Polynomial(Term object) {
+    AddElement(object);
+}
+
+inline Polynomial::~Polynomial() {
+    delete[] dataBaseTerms;
+}
+
+inline Polynomial::Polynomial() {
+    capacity = 1;
+    count = {};
+    dataBaseTerms = new Term[capacity];
+}
+
+inline void Polynomial::DeleteZeroTerm() {
+    Term* newDataBase = new Term[count + 1];
+
+    int countNewDataBase = {};
+    for (int i = 0; i < count; ++i) {
+        if (dataBaseTerms[i].coefficient != 0) {
+            newDataBase[countNewDataBase] = dataBaseTerms[i];
+            ++countNewDataBase;
+        }
+    }
+
+    Term* oldDataBase = dataBaseTerms;
+
+    dataBaseTerms = newDataBase;
+
+    capacity = count + 1;
+    count = countNewDataBase;
+    delete[] oldDataBase;
+}
+
+inline void Polynomial::SimplificationPolynomial() {
+    int quantityDegreesPolynomial = 1;
+
+    for (int i = 0; i < count - 1; ++i) {
+        if (dataBaseTerms[i].power != dataBaseTerms[i + 1].power) {
+            ++quantityDegreesPolynomial;
+        }
+    }
+
+    Term* newPolynomial = new Term[quantityDegreesPolynomial];
+
+    int countNewPolynomial = 0;
+    newPolynomial[0].power = dataBaseTerms[0].power;
+
+    for (int i = 0; i < count; ++i) {
+        if (newPolynomial[countNewPolynomial].power != dataBaseTerms[i].power) {
+            ++countNewPolynomial;
+            newPolynomial[countNewPolynomial].power = dataBaseTerms[i].power;
+            newPolynomial[countNewPolynomial] += dataBaseTerms[i];
+        } else {
+            newPolynomial[countNewPolynomial] += dataBaseTerms[i];
+        }
+    }
+
+    Term* oldPolynomial = dataBaseTerms;
+
+    dataBaseTerms = newPolynomial;
+
+    count = quantityDegreesPolynomial;
+    capacity = quantityDegreesPolynomial + 1;
+
+    delete[] oldPolynomial;
+}
+
+inline void Polynomial::SortDataBase() {
+    for (int i = 0; i < count; ++i) {
+        for (int j = 0; j < count - i - 1; ++j) {
+            if (modeStorage == static_cast<CompositePolynomial::ModeStorage>(1)) {
+                if (dataBaseTerms[j].power > dataBaseTerms[j + 1].power) {
+                    std::swap(dataBaseTerms[j], dataBaseTerms[j + 1]);
+                }
+            } else {
+                if (dataBaseTerms[j].power < dataBaseTerms[j + 1].power) {
+                    std::swap(dataBaseTerms[j], dataBaseTerms[j + 1]);
+                }
+            }
+        }
+    }
+}
+
+inline void Polynomial::ReSize() {
+    if (count >= capacity) {
+        Term* newDataBase = new Term[this->capacity * 2];
+        std::copy(dataBaseTerms, dataBaseTerms + count, newDataBase);
+
+        Term* oldDataBase = dataBaseTerms;
+
+        dataBaseTerms = newDataBase;
+        capacity *= 2;
+
+        delete[] oldDataBase;
+    }
+}
+
+inline void Polynomial::AddElement(Term object) {
+    ReSize();
+
+    dataBaseTerms[count] = object;
+    ++count;
+}
+
+inline void Polynomial::setModeStorage(CompositePolynomial::ModeStorage variantModeStorage) {
+    modeStorage = variantModeStorage;
+}
+
+inline Polynomial& Polynomial::operator*=(const Polynomial& other) {
+    Polynomial newPoly;
+
+    for (int i = 0; i < count; ++i) {
+        for (int j = 0; j < other.count; ++j) {
+            newPoly.AddElement(dataBaseTerms[i] * other.dataBaseTerms[j]);
+        }
+    }
+
+    delete[] dataBaseTerms;
+
+    dataBaseTerms = new Term[newPoly.capacity];
+    std::copy(newPoly.dataBaseTerms, newPoly.dataBaseTerms + newPoly.capacity, dataBaseTerms);
+
+    capacity = newPoly.capacity;
+    count = newPoly.count;
+
+    SortDataBase();
+    SimplificationPolynomial();
+
+    return *this;
+}
+
+inline Polynomial& Polynomial::operator+=(const Polynomial& other) {
+    for (int i = 0; i < other.count; ++i) {
+        AddElement(other.dataBaseTerms[i]);
+    }
+
+    SortDataBase();
+    SimplificationPolynomial();
+    DeleteZeroTerm();
+
+    return *this;
+}
+
+inline Polynomial& Polynomial::operator=(const Polynomial& other) {
+    for (int i = 0; i < other.count; ++i) {
+        AddElement(other.dataBaseTerms[i]);
+    }
+
+    return *this;
+}
+
+inline Polynomial operator+(const Polynomial& firstPoly, const Polynomial& secondPoly) {
+    Polynomial newPoly;
+
+    for (int i = 0; i < firstPoly.count; ++i) {
+        newPoly.AddElement(firstPoly.dataBaseTerms[i]);
+    }
+    for (int i = 0; i < secondPoly.count; ++i) {
+        newPoly.AddElement(secondPoly.dataBaseTerms[i]);
+    }
+
+    newPoly.SortDataBase();
+    newPoly.SimplificationPolynomial();
+    newPoly.DeleteZeroTerm();
+
+    return newPoly;
+}
+
+inline Polynomial operator*(const Polynomial& firstPoly, const Polynomial& secondPoly) {
+    Polynomial newPoly;
+
+    for (int i = 0; i < firstPoly.count; ++i) {
+        for (int j = 0; j < secondPoly.count; ++j) {
+            newPoly.AddElement(firstPoly.dataBaseTerms[i] * secondPoly.dataBaseTerms[j]);
+        }
+    }
+
+    newPoly.SortDataBase();
+    newPoly.SimplificationPolynomial();
+
+    return newPoly;
+}
+
+inline std::istream& operator>>(std::istream& cin, Polynomial& other) {
+    char* bufferPolynomial = new char[128]{};
+
+    cin.getline(bufferPolynomial, 128);
+
+    int quantitySignificantsymbols = {};
+    int quantitySpaces = {};
+
+    for (int i = 0; i < 128; ++i) {
+        if (bufferPolynomial[i] != '\0') {
+            ++quantitySignificantsymbols;
+        }
+
+        if (bufferPolynomial[i] == ' ') {
+            ++quantitySpaces;
+        }
+    }
+
+    char* clinedBufferPolynomial = new char[quantitySignificantsymbols + 1 - quantitySpaces]{};
+    int countNewBuffer = {};
+
+    for (int i = 0; i < std::strlen(bufferPolynomial); ++i) {
+        if (bufferPolynomial[i] != ' ') {
+            clinedBufferPolynomial[countNewBuffer] = bufferPolynomial[i];
+            ++countNewBuffer;
+        }
+    }
+
+    std::match_results<const char*> result;
+    std::regex regular(R"(([-+]?\d*)x\^?([-]?\d+)?|([-+]?\d+))");
+
+    const char* constBufferPolunomial = clinedBufferPolynomial;
+    const char* searchStart = constBufferPolunomial;
+
+    while (std::regex_search(searchStart, constBufferPolunomial + std::strlen(constBufferPolunomial), result, regular)) {
+        std::sub_match<const char*> match = result[0];
+        std::size_t sizeMatch = match.length();
+
+        char* memberPoly = new char[sizeMatch + 1]{};
+        std::memcpy(memberPoly, match.first, sizeMatch);
+
+        Term term;
+
+        memberPoly >> term;
+
+        if (term.getCoefficient() == 0) {
+            delete[] memberPoly;
+
+            searchStart = result.suffix().first;
+            continue;
+        }
+
+        other.AddElement(term);
+
+        delete[] memberPoly;
+
+        searchStart = result.suffix().first;
+    }
+
+    other.SortDataBase();
+
+    other.SimplificationPolynomial();
+
+    other.DeleteZeroTerm();
+
+    delete[] clinedBufferPolynomial;
+    delete[] bufferPolynomial;
+    return cin;
+}
+
+inline std::ostream& operator<<(std::ostream& cout, Polynomial& other) {
+    for (int i = 0; i < other.count; ++i) {
+        std::cout << other.dataBaseTerms[i] << ' ';
+    }
+
+    return cout;
+}
+
+----- Содержимое файла: lib/Polynomial.cpp -----
+#include "Polynomial.hpp"
+
+----- Содержимое файла: lib/CMakeLists.txt -----
+cmake_minimum_required(VERSION 3.23)
+
+set(project lib)
+project(${project})
+
+set(CMAKE_CXX_STANDARD 17)
+
+set(${project}_SOURCES
+        Polynomial.cpp
+        Term.cpp)
+set(${project}_HEADERS
+        Polynomial.hpp
+        Term.hpp)
+
+set(${project}_SOURCE_LIST
+${${project}_SOURCES}
+${${project}_HEADERS})
+
+add_library(${project}
+        STATIC
+        ${${project}_SOURCE_LIST})
+
+----- Содержимое файла: CMakeLists.txt -----
+cmake_minimum_required(VERSION 3.23)
+
+set(project CompositePolynomial)
+project(${project})
+
+set(CMAKE_CXX_STANDARD 17)
+
+set(${project}_SOURCES
+        main.cpp
+        CompositePolynomial.cpp)
+
+set(${project}_HEADERS
+        CompositePolynomial.hpp)
+
+add_subdirectory(lib)
+
+set(${project}_SOURCE_LIST
+        ${${project}_SOURCES}
+        ${${project}_HEADERS})
+
+add_executable(${project}
+        ${${project}_SOURCE_LIST})
+
+target_link_libraries(${project} lib)
+
+add_custom_target(
+    clang-format
+    COMMAND clang-format
+    -Werror
+    ${SOURCES}
+    ${HEADERS}
+)
+
