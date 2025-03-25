@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/Application.dir/main.cpp.o CMakeFiles/Application.dir/AppInstitution.cpp.o -o Application  VectorClass/libVectorClass.a InsitutionClass/libInsitutionClass.a StringClass/libStringClass.a 

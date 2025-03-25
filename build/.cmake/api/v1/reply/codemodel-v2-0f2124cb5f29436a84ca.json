@@ -1,0 +1,174 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "VectorClass",
+					"jsonFile" : "directory-VectorClass-Debug-1413c876d990a936642e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "VectorClass",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "InsitutionClass",
+					"jsonFile" : "directory-InsitutionClass-Debug-11fc007dc602a67a54d4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "InsitutionClass",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "StringClass",
+					"jsonFile" : "directory-StringClass-Debug-b22e539fb459d42bb108.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "StringClass",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "AppInstitution",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "VectorClass",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "InsitutionClass",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "StringClass",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AppInstitution::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AppInstitution-Debug-e0701588791d4200d3f6.json",
+					"name" : "AppInstitution",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "InsitutionClass::@b322d87abc849dbc8677",
+					"jsonFile" : "target-InsitutionClass-Debug-ed609ad05a527150ab44.json",
+					"name" : "InsitutionClass",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "StringClass::@33e2581c951d8ba86b47",
+					"jsonFile" : "target-StringClass-Debug-394b45f8828441875046.json",
+					"name" : "StringClass",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "VectorClass::@e2a0368533eef572eb32",
+					"jsonFile" : "target-VectorClass-Debug-b9bf27e52b8d38dc50d1.json",
+					"name" : "VectorClass",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/adduser/Github/Busygin_labs_2sem_project/build",
+		"source" : "/home/adduser/Github/Busygin_labs_2sem_project"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

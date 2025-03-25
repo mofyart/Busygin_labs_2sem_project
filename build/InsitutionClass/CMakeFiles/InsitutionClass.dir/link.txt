@@ -1,0 +1,2 @@
+/usr/bin/ar qc libInsitutionClass.a CMakeFiles/InsitutionClass.dir/Institution.cpp.o
+/usr/bin/ranlib libInsitutionClass.a

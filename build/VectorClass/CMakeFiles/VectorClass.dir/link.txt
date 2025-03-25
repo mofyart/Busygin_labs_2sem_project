@@ -1,0 +1,2 @@
+/usr/bin/ar qc libVectorClass.a CMakeFiles/VectorClass.dir/Vector.cpp.o
+/usr/bin/ranlib libVectorClass.a

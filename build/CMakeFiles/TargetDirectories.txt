@@ -1,0 +1,12 @@
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/AppInstitution.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/rebuild_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/VectorClass/CMakeFiles/VectorClass.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/VectorClass/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/VectorClass/CMakeFiles/rebuild_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/InsitutionClass/CMakeFiles/InsitutionClass.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/InsitutionClass/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/InsitutionClass/CMakeFiles/rebuild_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/StringClass/CMakeFiles/StringClass.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/StringClass/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/StringClass/CMakeFiles/rebuild_cache.dir

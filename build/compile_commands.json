@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/AppInstitution.dir/main.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/main.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/main.cpp",
+  "output": "CMakeFiles/AppInstitution.dir/main.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/AppInstitution.dir/AppInstitution.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/AppInstitution.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/AppInstitution.cpp",
+  "output": "CMakeFiles/AppInstitution.dir/AppInstitution.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/VectorClass",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/VectorClass.dir/Vector.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/VectorClass/Vector.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/VectorClass/Vector.cpp",
+  "output": "VectorClass/CMakeFiles/VectorClass.dir/Vector.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/InsitutionClass",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/InsitutionClass.dir/Institution.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/InsitutionClass/Institution.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/InsitutionClass/Institution.cpp",
+  "output": "InsitutionClass/CMakeFiles/InsitutionClass.dir/Institution.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/StringClass",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/StringClass.dir/String.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/StringClass/String.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/StringClass/String.cpp",
+  "output": "StringClass/CMakeFiles/StringClass.dir/String.cpp.o"
+}
+]
