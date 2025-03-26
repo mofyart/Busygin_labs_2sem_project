@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/AppInstitution.dir/main.cpp.o CMakeFiles/AppInstitution.dir/AppInstitution.cpp.o -o AppInstitution  VectorClass/libVectorClass.a InsitutionClass/libInsitutionClass.a StringClass/libStringClass.a 
+/usr/bin/g++ -g CMakeFiles/AppInstitution.dir/main.cpp.o CMakeFiles/AppInstitution.dir/AppInstitution.cpp.o -o AppInstitution  HashTableClass/libHashTableClass.a InsitutionClass/libInsitutionClass.a StringClass/libStringClass.a 

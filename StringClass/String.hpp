@@ -6,12 +6,14 @@
 class String {
  private:
     char* stringBuffer;
-    int sizeBuffer;
+    int sizeBuffer = 0;
 
  public:
     String();
 
     void setString(char* stringBufferValue);
+
+    void setSize(int sizeValue);
 
     void DeleteString();
 
@@ -27,6 +29,10 @@ class String {
 
     friend std::ostream& operator<<(std::ostream& out, String& string);
 };
+
+inline void String::setSize(int sizeValue = 0) {
+    sizeBuffer = 0;
+}
 
 inline String::String() {
     stringBuffer = nullptr;

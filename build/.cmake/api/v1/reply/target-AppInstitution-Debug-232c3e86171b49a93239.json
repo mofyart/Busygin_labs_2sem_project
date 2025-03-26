@@ -77,7 +77,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "VectorClass::@e2a0368533eef572eb32"
+			"id" : "HashTableClass::@bb378713319bdfc288db"
 		},
 		{
 			"backtrace" : 3,
@@ -103,7 +103,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "VectorClass/libVectorClass.a",
+				"fragment" : "HashTableClass/libHashTableClass.a",
 				"role" : "libraries"
 			},
 			{

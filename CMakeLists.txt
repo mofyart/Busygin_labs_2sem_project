@@ -12,7 +12,7 @@ set(${project}_SOURCES
 set(${project}_HEADERS
         AppInstitution.hpp)
 
-add_subdirectory(VectorClass)
+add_subdirectory(HashTableClass)
 add_subdirectory(InsitutionClass)
 add_subdirectory(StringClass)
 
@@ -23,6 +23,6 @@ set(${project}_SOURCE_LIST
 add_executable(${project}
         ${${project}_SOURCE_LIST})
 
-target_link_libraries(${project} VectorClass)
+target_link_libraries(${project} HashTableClass)
 target_link_libraries(${project} InsitutionClass)
 target_link_libraries(${project} StringClass)

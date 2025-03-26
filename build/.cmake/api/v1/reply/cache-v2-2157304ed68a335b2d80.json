@@ -1218,6 +1218,42 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "HashTableClass_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/adduser/Github/Busygin_labs_2sem_project/build/HashTableClass"
+		},
+		{
+			"name" : "HashTableClass_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "HashTableClass_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/adduser/Github/Busygin_labs_2sem_project/HashTableClass"
+		},
+		{
 			"name" : "InsitutionClass_BINARY_DIR",
 			"properties" : 
 			[

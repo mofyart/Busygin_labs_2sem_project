@@ -64,23 +64,38 @@ CMAKE_BINARY_DIR = /home/adduser/Github/Busygin_labs_2sem_project/build
 
 # The main recursive "all" target.
 all: CMakeFiles/AppInstitution.dir/all
-all: VectorClass/all
+all: HashTableClass/all
 all: InsitutionClass/all
 all: StringClass/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: VectorClass/preinstall
+preinstall: HashTableClass/preinstall
 preinstall: InsitutionClass/preinstall
 preinstall: StringClass/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/AppInstitution.dir/clean
-clean: VectorClass/clean
+clean: HashTableClass/clean
 clean: InsitutionClass/clean
 clean: StringClass/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory HashTableClass
+
+# Recursive "all" directory target.
+HashTableClass/all: HashTableClass/CMakeFiles/HashTableClass.dir/all
+.PHONY : HashTableClass/all
+
+# Recursive "preinstall" directory target.
+HashTableClass/preinstall:
+.PHONY : HashTableClass/preinstall
+
+# Recursive "clean" directory target.
+HashTableClass/clean: HashTableClass/CMakeFiles/HashTableClass.dir/clean
+.PHONY : HashTableClass/clean
 
 #=============================================================================
 # Directory level rules for directory InsitutionClass
@@ -113,25 +128,10 @@ StringClass/clean: StringClass/CMakeFiles/StringClass.dir/clean
 .PHONY : StringClass/clean
 
 #=============================================================================
-# Directory level rules for directory VectorClass
-
-# Recursive "all" directory target.
-VectorClass/all: VectorClass/CMakeFiles/VectorClass.dir/all
-.PHONY : VectorClass/all
-
-# Recursive "preinstall" directory target.
-VectorClass/preinstall:
-.PHONY : VectorClass/preinstall
-
-# Recursive "clean" directory target.
-VectorClass/clean: VectorClass/CMakeFiles/VectorClass.dir/clean
-.PHONY : VectorClass/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/AppInstitution.dir
 
 # All Build rule for target.
-CMakeFiles/AppInstitution.dir/all: VectorClass/CMakeFiles/VectorClass.dir/all
+CMakeFiles/AppInstitution.dir/all: HashTableClass/CMakeFiles/HashTableClass.dir/all
 CMakeFiles/AppInstitution.dir/all: InsitutionClass/CMakeFiles/InsitutionClass.dir/all
 CMakeFiles/AppInstitution.dir/all: StringClass/CMakeFiles/StringClass.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppInstitution.dir/build.make CMakeFiles/AppInstitution.dir/depend
@@ -156,30 +156,30 @@ CMakeFiles/AppInstitution.dir/clean:
 .PHONY : CMakeFiles/AppInstitution.dir/clean
 
 #=============================================================================
-# Target rules for target VectorClass/CMakeFiles/VectorClass.dir
+# Target rules for target HashTableClass/CMakeFiles/HashTableClass.dir
 
 # All Build rule for target.
-VectorClass/CMakeFiles/VectorClass.dir/all:
-	$(MAKE) $(MAKESILENT) -f VectorClass/CMakeFiles/VectorClass.dir/build.make VectorClass/CMakeFiles/VectorClass.dir/depend
-	$(MAKE) $(MAKESILENT) -f VectorClass/CMakeFiles/VectorClass.dir/build.make VectorClass/CMakeFiles/VectorClass.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles --progress-num=8,9 "Built target VectorClass"
-.PHONY : VectorClass/CMakeFiles/VectorClass.dir/all
+HashTableClass/CMakeFiles/HashTableClass.dir/all:
+	$(MAKE) $(MAKESILENT) -f HashTableClass/CMakeFiles/HashTableClass.dir/build.make HashTableClass/CMakeFiles/HashTableClass.dir/depend
+	$(MAKE) $(MAKESILENT) -f HashTableClass/CMakeFiles/HashTableClass.dir/build.make HashTableClass/CMakeFiles/HashTableClass.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles --progress-num=4,5 "Built target HashTableClass"
+.PHONY : HashTableClass/CMakeFiles/HashTableClass.dir/all
 
 # Build rule for subdir invocation for target.
-VectorClass/CMakeFiles/VectorClass.dir/rule: cmake_check_build_system
+HashTableClass/CMakeFiles/HashTableClass.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 VectorClass/CMakeFiles/VectorClass.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HashTableClass/CMakeFiles/HashTableClass.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles 0
-.PHONY : VectorClass/CMakeFiles/VectorClass.dir/rule
+.PHONY : HashTableClass/CMakeFiles/HashTableClass.dir/rule
 
 # Convenience name for target.
-VectorClass: VectorClass/CMakeFiles/VectorClass.dir/rule
-.PHONY : VectorClass
+HashTableClass: HashTableClass/CMakeFiles/HashTableClass.dir/rule
+.PHONY : HashTableClass
 
 # clean rule for target.
-VectorClass/CMakeFiles/VectorClass.dir/clean:
-	$(MAKE) $(MAKESILENT) -f VectorClass/CMakeFiles/VectorClass.dir/build.make VectorClass/CMakeFiles/VectorClass.dir/clean
-.PHONY : VectorClass/CMakeFiles/VectorClass.dir/clean
+HashTableClass/CMakeFiles/HashTableClass.dir/clean:
+	$(MAKE) $(MAKESILENT) -f HashTableClass/CMakeFiles/HashTableClass.dir/build.make HashTableClass/CMakeFiles/HashTableClass.dir/clean
+.PHONY : HashTableClass/CMakeFiles/HashTableClass.dir/clean
 
 #=============================================================================
 # Target rules for target InsitutionClass/CMakeFiles/InsitutionClass.dir
@@ -188,7 +188,7 @@ VectorClass/CMakeFiles/VectorClass.dir/clean:
 InsitutionClass/CMakeFiles/InsitutionClass.dir/all:
 	$(MAKE) $(MAKESILENT) -f InsitutionClass/CMakeFiles/InsitutionClass.dir/build.make InsitutionClass/CMakeFiles/InsitutionClass.dir/depend
 	$(MAKE) $(MAKESILENT) -f InsitutionClass/CMakeFiles/InsitutionClass.dir/build.make InsitutionClass/CMakeFiles/InsitutionClass.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles --progress-num=4,5 "Built target InsitutionClass"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles --progress-num=6,7 "Built target InsitutionClass"
 .PHONY : InsitutionClass/CMakeFiles/InsitutionClass.dir/all
 
 # Build rule for subdir invocation for target.
@@ -214,7 +214,7 @@ InsitutionClass/CMakeFiles/InsitutionClass.dir/clean:
 StringClass/CMakeFiles/StringClass.dir/all:
 	$(MAKE) $(MAKESILENT) -f StringClass/CMakeFiles/StringClass.dir/build.make StringClass/CMakeFiles/StringClass.dir/depend
 	$(MAKE) $(MAKESILENT) -f StringClass/CMakeFiles/StringClass.dir/build.make StringClass/CMakeFiles/StringClass.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles --progress-num=6,7 "Built target StringClass"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles --progress-num=8,9 "Built target StringClass"
 .PHONY : StringClass/CMakeFiles/StringClass.dir/all
 
 # Build rule for subdir invocation for target.

@@ -108,7 +108,7 @@ AppInstitution_EXTERNAL_OBJECTS =
 AppInstitution: CMakeFiles/AppInstitution.dir/main.cpp.o
 AppInstitution: CMakeFiles/AppInstitution.dir/AppInstitution.cpp.o
 AppInstitution: CMakeFiles/AppInstitution.dir/build.make
-AppInstitution: VectorClass/libVectorClass.a
+AppInstitution: HashTableClass/libHashTableClass.a
 AppInstitution: InsitutionClass/libInsitutionClass.a
 AppInstitution: StringClass/libStringClass.a
 AppInstitution: CMakeFiles/AppInstitution.dir/link.txt

@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "VectorClass",
-		"source" : "VectorClass"
+		"build" : "HashTableClass",
+		"source" : "HashTableClass"
 	}
 }

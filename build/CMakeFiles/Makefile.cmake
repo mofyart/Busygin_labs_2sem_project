@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/adduser/Github/Busygin_labs_2sem_project/CMakeLists.txt"
+  "/home/adduser/Github/Busygin_labs_2sem_project/HashTableClass/CMakeLists.txt"
   "/home/adduser/Github/Busygin_labs_2sem_project/InsitutionClass/CMakeLists.txt"
   "/home/adduser/Github/Busygin_labs_2sem_project/StringClass/CMakeLists.txt"
-  "/home/adduser/Github/Busygin_labs_2sem_project/VectorClass/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
@@ -43,7 +43,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "VectorClass/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "HashTableClass/CMakeFiles/CMakeDirectoryInformation.cmake"
   "InsitutionClass/CMakeFiles/CMakeDirectoryInformation.cmake"
   "StringClass/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
@@ -51,7 +51,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/AppInstitution.dir/DependInfo.cmake"
-  "VectorClass/CMakeFiles/VectorClass.dir/DependInfo.cmake"
+  "HashTableClass/CMakeFiles/HashTableClass.dir/DependInfo.cmake"
   "InsitutionClass/CMakeFiles/InsitutionClass.dir/DependInfo.cmake"
   "StringClass/CMakeFiles/StringClass.dir/DependInfo.cmake"
   )

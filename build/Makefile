@@ -130,17 +130,17 @@ AppInstitution/fast:
 .PHONY : AppInstitution/fast
 
 #=============================================================================
-# Target rules for targets named VectorClass
+# Target rules for targets named HashTableClass
 
 # Build rule for target.
-VectorClass: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 VectorClass
-.PHONY : VectorClass
+HashTableClass: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HashTableClass
+.PHONY : HashTableClass
 
 # fast build rule for target.
-VectorClass/fast:
-	$(MAKE) $(MAKESILENT) -f VectorClass/CMakeFiles/VectorClass.dir/build.make VectorClass/CMakeFiles/VectorClass.dir/build
-.PHONY : VectorClass/fast
+HashTableClass/fast:
+	$(MAKE) $(MAKESILENT) -f HashTableClass/CMakeFiles/HashTableClass.dir/build.make HashTableClass/CMakeFiles/HashTableClass.dir/build
+.PHONY : HashTableClass/fast
 
 #=============================================================================
 # Target rules for targets named InsitutionClass
@@ -225,9 +225,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... AppInstitution"
+	@echo "... HashTableClass"
 	@echo "... InsitutionClass"
 	@echo "... StringClass"
-	@echo "... VectorClass"
 	@echo "... AppInstitution.o"
 	@echo "... AppInstitution.i"
 	@echo "... AppInstitution.s"

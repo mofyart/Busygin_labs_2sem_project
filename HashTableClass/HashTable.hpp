@@ -5,24 +5,24 @@
 #include "../InsitutionClass/Institution.hpp"
 
 template<typename TypeElement>
-class MyVector {
+class MyHashTable {
  protected:
     int capacity;
     int count;
     TypeElement* dataBase;
 
  public:
-    MyVector();
+    MyHashTable();
 
-    bool CheckExistObject(TypeElement object);
+    int HashKey(String key);
 
     void AddElement(TypeElement object);
 
-    MyVector(TypeElement object);
+    MyHashTable(TypeElement object);
 
-    MyVector(MyVector& other);
+    MyHashTable(MyHashTable& other);
 
-    ~MyVector();
+    ~MyHashTable();
 
     void ReSize();
 
@@ -32,25 +32,24 @@ class MyVector {
 
     TypeElement operator[](int i);
 
-    void SortDataBase();
-
     bool FindElement(TypeElement object);
 
-    MyVector& operator=(const MyVector& other);
+    MyHashTable& operator=(const MyHashTable& other);
 
     template<typename T>
-    friend std::ostream& operator<<(std::ostream& cout, MyVector<T>& other);
+    friend std::ostream& operator<<(std::ostream& cout, MyHashTable<T>& other);
 };
 
-template<typename TypeElement>
-MyVector<TypeElement>::MyVector() {
-    capacity = 2;
+
+template<>
+inline MyHashTable<Institution*>::MyHashTable() {
+    capacity = 6;
     count = {};
-    dataBase = new TypeElement[capacity];
+    dataBase = new Institution*[capacity]();
 }
 
 template<typename TypeElement>
-std::ostream& operator<<(std::ostream& cout, MyVector<TypeElement>& other) {
+std::ostream& operator<<(std::ostream& cout, MyHashTable<TypeElement>& other) {
     for (int i = 0; i < other.count; ++i) {
         std::cout << other.dataBase[i] << ' ';
     }
@@ -58,7 +57,7 @@ std::ostream& operator<<(std::ostream& cout, MyVector<TypeElement>& other) {
 }
 
 template<>
-inline std::ostream& operator<<(std::ostream& cout, MyVector<Institution*>& other) {
+inline std::ostream& operator<<(std::ostream& cout, MyHashTable<Institution*>& other) {
     std::cout << std::endl;
     std::cout << "--------------------------" << std::endl;
     std::cout << "| Содержимое базы данных |" << std::endl;
@@ -74,16 +73,20 @@ inline std::ostream& operator<<(std::ostream& cout, MyVector<Institution*>& othe
 }
 
 template<typename TypeElement>
-void MyVector<TypeElement>::AddElement(TypeElement object) {
-    ReSize();
+inline int MyHashTable<TypeElement>::HashKey(String key) {
+    int sumASCIISymbols = 0;
+    const char* bufferString = key.getString();
 
-    this->dataBase[this->count] = object;
-    ++this->count;
+    for (int i = 0; i < std::strlen(bufferString); ++i) {
+        sumASCIISymbols += bufferString[i] * (i + 1);
+    }
+
+    return sumASCIISymbols % capacity;
 }
 
 template<typename TypeElement>
-void MyVector<TypeElement>::ReSize() {
-    if (count >= capacity) {
+void MyHashTable<TypeElement>::ReSize() {
+    if (count / capacity * 100 >= 70) {
         TypeElement* newDataBase = new TypeElement[capacity * 2];
         std::copy(dataBase, dataBase + count, newDataBase);
 
@@ -96,8 +99,49 @@ void MyVector<TypeElement>::ReSize() {
     }
 }
 
+template<>
+inline void MyHashTable<Institution*>::ReSize() {
+    if (count / capacity * 100 >= 70) {
+        Institution** newDataBase = new Institution*[capacity * 2]();
+        Institution** oldDataBase = dataBase;
+        dataBase = newDataBase;
+
+        for (int i = 0; i < capacity; ++i) {
+            dataBase[i] = oldDataBase[i];
+        }
+
+        capacity *= 2;
+
+        delete[] oldDataBase;
+    }
+}
+
+template<>
+inline void MyHashTable<Institution*>::AddElement(Institution* object) {
+    ReSize();
+
+    int hashedIndex = HashKey(object->getName());
+
+    if (dataBase[hashedIndex] != nullptr) {
+        int newCount = (hashedIndex == (capacity - 1)) ? 0 : hashedIndex + 1;
+        while (dataBase[newCount] != nullptr) {
+            if (newCount == (capacity - 1)) {
+                newCount = -1;
+            }
+            ++newCount;
+        }
+
+        dataBase[newCount] = object;
+    } else {
+        dataBase[hashedIndex] = object;
+    }
+    ++count;
+}
+
+
+
 template<typename TypeElement>
-void MyVector<TypeElement>::CleanVector() {
+void MyHashTable<TypeElement>::CleanVector() {
     for (int i = 0; i < count; ++i) {
         delete dataBase[i];
     }
@@ -110,31 +154,21 @@ void MyVector<TypeElement>::CleanVector() {
 }
 
 template<typename TypeElement>
-MyVector<TypeElement>::MyVector(TypeElement object) {
-    this->capacity = 1;
+MyHashTable<TypeElement>::MyHashTable(TypeElement object) {
+    this->capacity = 4;
     this->count = {};
     this->dataBase = new TypeElement[this->capacity];
     this->AddElement(object);
 }
 
-template<typename TypeElement>
-bool MyVector<TypeElement>::CheckExistObject(TypeElement object) {
-    for (int i = 0; i < this->count; ++i) {
-        if (this->dataBase[i] == object) {
-            return false;
-        }
-    }
-
-    return true;
-}
 
 template<typename TypeElement>
-MyVector<TypeElement>::~MyVector() {
+MyHashTable<TypeElement>::~MyHashTable() {
     delete[] dataBase;
 }
 
 template<>
-inline MyVector<Institution*>::~MyVector() {
+inline MyHashTable<Institution*>::~MyHashTable() {
     for (int i = 0; i < count; ++i) {
         delete dataBase[i];
     }
@@ -143,7 +177,7 @@ inline MyVector<Institution*>::~MyVector() {
 }
 
 template<typename TypeElement>
-MyVector<TypeElement>::MyVector(MyVector& other) {
+MyHashTable<TypeElement>::MyHashTable(MyHashTable& other) {
     this->capacity = other.capacity;
     this->count = other.count;
     this->dataBase = new TypeElement[this->capacity];
@@ -152,7 +186,7 @@ MyVector<TypeElement>::MyVector(MyVector& other) {
 }
 
 template<typename TypeElement>
-bool MyVector<TypeElement>::DeleteElement(int indexDeletedElement) {
+bool MyHashTable<TypeElement>::DeleteElement(int indexDeletedElement) {
     for (int j = indexDeletedElement; j < this->capacity - 1; ++j) {
         std::swap(this->dataBase[j], this->dataBase[j + 1]);
     }
@@ -174,23 +208,13 @@ bool MyVector<TypeElement>::DeleteElement(int indexDeletedElement) {
 }
 
 template<typename TypeElement>
-TypeElement MyVector<TypeElement>::operator[](int i) {
+TypeElement MyHashTable<TypeElement>::operator[](int i) {
     return this->dataBase[i];
 }
 
-template<typename TypeElement>
-void MyVector<TypeElement>::SortDataBase() {
-    for (int i = 0; i < this->count; ++i) {
-        for (int j = 1; j < this->count - i; ++j) {
-            if (this->dataBase[j - 1] > this->dataBase[j]) {
-                std::swap(this->dataBase[j], this->dataBase[j - 1]);
-            }
-        }
-    }
-}
 
 template<typename TypeElement>
-MyVector<TypeElement>& MyVector<TypeElement>::operator=(const MyVector& other) {
+MyHashTable<TypeElement>& MyHashTable<TypeElement>::operator=(const MyHashTable& other) {
     this->capacity = other.capacity;
     this->count = other.count;
 
@@ -205,7 +229,7 @@ MyVector<TypeElement>& MyVector<TypeElement>::operator=(const MyVector& other) {
 }
 
 template<typename TypeElement>
-bool MyVector<TypeElement>::FindElement(TypeElement object) {
+bool MyHashTable<TypeElement>::FindElement(TypeElement object) {
     int leftBoundary = 0;
     int rightBoudary = this->count - 1;
     int middleElement{};

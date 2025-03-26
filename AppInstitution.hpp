@@ -1,5 +1,5 @@
 #include "InsitutionClass/Institution.hpp"
-#include "VectorClass/Vector.hpp"
+#include "HashTableClass/HashTable.hpp"
 namespace AppInstitution {
 enum class Tasks {
     readFile = 1,
@@ -9,7 +9,7 @@ enum class Tasks {
     exitApp = 5,
 };
 
-void DeleteInstitution(MyVector<Institution*>& dataBase);
+void DeleteInstitution(MyHashTable<Institution*>& dataBase);
 
 void RunProcessingInsitution();
 

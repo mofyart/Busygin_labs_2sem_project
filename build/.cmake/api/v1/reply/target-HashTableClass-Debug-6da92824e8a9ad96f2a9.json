@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "VectorClass/libVectorClass.a"
+			"path" : "HashTableClass/libHashTableClass.a"
 		}
 	],
 	"backtrace" : 1,
@@ -15,7 +15,7 @@
 		],
 		"files" : 
 		[
-			"VectorClass/CMakeLists.txt"
+			"HashTableClass/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -54,13 +54,13 @@
 			]
 		}
 	],
-	"id" : "VectorClass::@e2a0368533eef572eb32",
-	"name" : "VectorClass",
-	"nameOnDisk" : "libVectorClass.a",
+	"id" : "HashTableClass::@bb378713319bdfc288db",
+	"name" : "HashTableClass",
+	"nameOnDisk" : "libHashTableClass.a",
 	"paths" : 
 	{
-		"build" : "VectorClass",
-		"source" : "VectorClass"
+		"build" : "HashTableClass",
+		"source" : "HashTableClass"
 	},
 	"sourceGroups" : 
 	[
@@ -84,12 +84,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "VectorClass/Vector.cpp",
+			"path" : "HashTableClass/HashTable.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "VectorClass/Vector.hpp",
+			"path" : "HashTableClass/HashTable.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

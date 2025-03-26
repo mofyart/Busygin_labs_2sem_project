@@ -12,10 +12,10 @@
   "output": "CMakeFiles/AppInstitution.dir/AppInstitution.cpp.o"
 },
 {
-  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/VectorClass",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/VectorClass.dir/Vector.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/VectorClass/Vector.cpp",
-  "file": "/home/adduser/Github/Busygin_labs_2sem_project/VectorClass/Vector.cpp",
-  "output": "VectorClass/CMakeFiles/VectorClass.dir/Vector.cpp.o"
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/HashTableClass",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/HashTableClass.dir/HashTable.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/HashTableClass/HashTable.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/HashTableClass/HashTable.cpp",
+  "output": "HashTableClass/CMakeFiles/HashTableClass.dir/HashTable.cpp.o"
 },
 {
   "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/InsitutionClass",
