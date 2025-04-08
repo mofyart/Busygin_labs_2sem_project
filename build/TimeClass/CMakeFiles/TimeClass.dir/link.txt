@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTimeClass.a CMakeFiles/TimeClass.dir/TimeClass.cpp.o
+/usr/bin/ranlib libTimeClass.a

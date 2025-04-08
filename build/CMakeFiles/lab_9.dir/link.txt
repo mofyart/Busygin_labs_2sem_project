@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/lab_9.dir/main.cpp.o CMakeFiles/lab_9.dir/PractiseSTLApp.cpp.o -o lab_9  DateClass/libDateClass.a TimeClass/libTimeClass.a 

@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/lab_8.dir/main.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/main.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/main.cpp",
+  "output": "CMakeFiles/lab_8.dir/main.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/lab_8.dir/PractiseSTLApp.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/PractiseSTLApp.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/PractiseSTLApp.cpp",
+  "output": "CMakeFiles/lab_8.dir/PractiseSTLApp.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/DateClass",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/DateClass.dir/DateClass.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/DateClass/DateClass.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/DateClass/DateClass.cpp",
+  "output": "DateClass/CMakeFiles/DateClass.dir/DateClass.cpp.o"
+},
+{
+  "directory": "/home/adduser/Github/Busygin_labs_2sem_project/build/TimeClass",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/TimeClass.dir/TimeClass.cpp.o -c /home/adduser/Github/Busygin_labs_2sem_project/TimeClass/TimeClass.cpp",
+  "file": "/home/adduser/Github/Busygin_labs_2sem_project/TimeClass/TimeClass.cpp",
+  "output": "TimeClass/CMakeFiles/TimeClass.dir/TimeClass.cpp.o"
+}
+]

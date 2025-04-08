@@ -1,0 +1,10 @@
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/lab_8.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/clang-format.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/CMakeFiles/rebuild_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/DateClass/CMakeFiles/DateClass.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/DateClass/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/DateClass/CMakeFiles/rebuild_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/TimeClass/CMakeFiles/TimeClass.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/TimeClass/CMakeFiles/edit_cache.dir
+/home/adduser/Github/Busygin_labs_2sem_project/build/TimeClass/CMakeFiles/rebuild_cache.dir

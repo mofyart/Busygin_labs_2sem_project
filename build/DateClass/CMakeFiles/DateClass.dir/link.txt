@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDateClass.a CMakeFiles/DateClass.dir/DateClass.cpp.o
+/usr/bin/ranlib libDateClass.a
